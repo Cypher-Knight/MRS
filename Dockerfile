@@ -11,4 +11,4 @@ COPY . /main
 RUN pip install -r requirements.txt
 
 # Define the entry point for the container
-CMD ["flask", "run", "--host=5000"]
+CMD ["flask", "run", "--host=8080"]
