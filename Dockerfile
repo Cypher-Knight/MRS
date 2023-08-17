@@ -11,7 +11,7 @@ COPY . /main
 RUN pip install -r requirements.txt
 
 # Make port 80 available to the world outside this container
-EXPOSE 45833
+EXPOSE 8000
 
 # Run app.py when the container launches
-CMD ["python", "main.py"]
+main.run(host='0.0.0.0', port=8000)
